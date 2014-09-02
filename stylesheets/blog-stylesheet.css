@@ -1,3 +1,12 @@
-div{
-	display:inline;
+th{
+	display:inline-block;
+	height:600px;
+	text-align: left;
+	border: 1px solid black;
+}
+table>tr>th{
+	position: fixed;
+}
+h3{
+	width: 600px;
 }
