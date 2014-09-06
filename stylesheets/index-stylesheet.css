@@ -6,3 +6,45 @@ footer{
 	float: bottom;
     border: 1px solid black;
 }
+nav{
+	float:left;
+	border: 1px solid black;
+	display:inline-block;
+	width:17%;
+	position:fixed:0px;
+
+}
+#mypic{
+	display: inline-block;
+	border: 1px solid black;
+	margin-left: 5%;
+	margin-right: 5%;
+	vertical-align:top;
+	
+}
+#infobox {
+	display:inline-block;
+	border: 1px solid black;
+	width:40%
+	
+}
+
+ul{
+	text-indent:50px;
+}
+
+section{
+	display:inline-block;
+	width: 75%
+	}
+main{
+	border: 1px solid black;
+	margin-left:5%;
+	width: 60%
+	margin:5%;
+}
+
+.smi{
+	width: 20px;
+	height: 20px;
+}
