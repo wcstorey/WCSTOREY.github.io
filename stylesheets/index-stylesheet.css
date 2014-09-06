@@ -1,0 +1,8 @@
+header{
+	float:top;
+    border: 1px solid black;
+}
+footer{
+	float: bottom;
+    border: 1px solid black;
+}
