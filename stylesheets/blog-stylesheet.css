@@ -7,3 +7,13 @@ th{
 table>tr>th{
 	position: fixed;
 }
+
+h3{
+  text-decoration:underline;
+}
+tr p{
+  text-align: justify;
+}
+#nav {
+  background-color: lightgrey;
+}

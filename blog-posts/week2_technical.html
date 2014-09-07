@@ -1,0 +1,52 @@
+<DOCTYPE html>
+	<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />
+		 <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+	</head>
+	
+	<body>
+	
+	<table>
+		<tr>
+			<th style="width:150px" id="nav">
+				Navigation Menu:
+			</th>	
+			<th>
+				<table>
+            <tr>
+						<h2> Title: What are the differences between relative, absolute, and fixed positioning?</h2>
+					</tr>
+					<tr>
+							Date:9/6/14
+					</tr>
+					<hr>
+					<tr style="width: 600px">
+							<p>HTML elements may be positioned in several specific ways: absolute, fixed, relative, and the default, static.  Let's go over each so we may see how they differ.</p>
+							<h3>Static</h3>
+							<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/static-position.jpg" />
+							<p> Starting with the default, static, is the normal default position.  This usually does not have to be set.  (If it needed to be set, the code example is below.)</p>
+							<p>Example:  position:static;</p>
+							<h3>Relative</h3>
+							<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/relative-position.jpg" />
+            <p>Example: position: relative: top: 10px.</p>
+							<p>Relative positioning allows a developer to shift an element from its normal, static position.  When using relative positioning, you need to specify where to shift and how much.  (Note that, by setting relative position, the element will on top of any static elements it overlaps.)</p>
+							<h4>Absolute</h4>
+							<img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/absolute-position.jpg" />
+        <p>Example: {position:absolute;top:0;left:0;}
+							<p>Absolute positioning allows a developer to place an element irrespective of random elements on the page.  Its positioning on the page is only constrained relative to the next parents element with relative or absolute positioning, or html element if none other such  elements exist.</p>
+							<h4>Fixed</h4>
+        <p>[Hard to show in a picture. Position is fixed and remains in place even when scrolling the window.]</p>
+        <p>Example: {position:fixed;top:0;left:0}</p>
+							<p>Fixed positioning positions element relative to the actual page, staying fixed even when the window is scrolled.</p>
+              <p>*Images and code courtesy of http://www.webdevbydoing.com/css/whats-the-difference-between-static-relative-absolute-and-fixed-positioning/</p>
+					</tr>
+				</table>
+			</th>
+		</tr>
+	</table>
+	
+	</body>
+	
+	</html>
