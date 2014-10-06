@@ -1,0 +1,50 @@
+<DOCTYPE html>
+	<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />
+		 <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+	</head>
+	
+	<body>
+	
+	<table>
+		<tr>
+			<th style="width:150px" id="nav">
+				Navigation Menu:
+			</th>	
+			<th>
+				<table>
+            <tr>
+						<h2> Title: Class Methods and Variables</h2>
+					</tr>
+					<tr>
+							Date: 10/5/14
+					</tr>
+					<hr>
+					<tr style="width: 600px">
+							<p>This week has a similar topic as last week.  Ruby has Object Oriented Programming.  Classes may be defined: "class XYZ".  Methods may be made to work with that class.  The methods are defined within the body of that class.  (see code below for an example).  Usually, and initialize method is created that allows creation of a new instance object of that class.  The object may be created by typing "XYZ.new(any parameters needed)".  The method may be called by typing the object name.the method: "XYZObject.method". Instance variables ("@variablename") may be used.  These variables may be used within methods of the class for a particular instance of the class without needing to pass the variable into each method as a parametere.  See some example code of a class, class methods, and instance variables below.</p>
+							<p>class Die<br>
+  def initialize(labels)<br>
+    @labels=labels<br>
+    raise ArgumentError.new("You must enter an array of labels for each side of the die.") if (@labels==[])<br>
+  end<br>
+
+  def sides<br>
+    p @labels.length<br>
+  end<br>
+
+  def roll<br>
+    p @labels.sample<br>
+  end<br>
+end</p>
+<p>Ruby also supports other variable types with differing scope.  Each type of variable using a prefix symbol(s) to denote the scpoe.  Global variables (prefix: $) are available everywhere.   Class variables (prefix: @@) are available to members of a certain class.  Instance variables (prefix: @) are only available to particular instances of a class.</p>
+					</tr>
+				</table>
+			</th>
+		</tr>
+	</table>
+	
+	</body>
+	
+	</html>
