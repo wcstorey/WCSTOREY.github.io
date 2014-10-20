@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+           <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+           <link rel="stylesheet" type="text/css" href="unit3cheatsheetstyle.css">
+          <title>SQL Cheatsheet</title>  
+          
+      </head>  
+            <header>
+                <h1>SQL Cheatsheet</h1>
+                <p><a href="#CRUD">CREATE/UPDATE/DELETE</a> | <a href="#FIND">FINDING DATA</a></p>
+            </header>
+            <hr>
+            <body>
+            <div>
+                <h2 id="CRUD">CREATE/UPDATE/DELETE</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>
+                        <h3>Command</h3>
+                    </th>
+                    <th>
+                        <h3>Description</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        CREATE TABLE "table_name" ("column_1" "data_type_for_column_1",
+"column_2" "data_type_for_column_2",
+... )
+                    </td>
+                    <td>
+                        creates a table named table_name with columns named column_1 and column_2, etc. requiring the data types specified for each column
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        ALTER TABLE table_name ADD column_name datatype
+                    </td>
+                    <td>
+                        Add a column requiring the specified data type in an existing table
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        ALTER TABLE table_name DDROP column_name datatype
+                    </td>
+                    <td>
+                         Delete a column in an existing table
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        DROP TABLE table_name
+                    <td>
+                        Delete table called table_name
+                    </td>
+                </tr>
+            </table>
+                <div>
+                <h2 id="FIND">FINDING DATA</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>
+                        <h3>Command</h3>
+                    </th>
+                    <th>
+                        <h3>Description</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT * FROM table
+                    </td>
+                    <td>
+                        returns all data from table
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        SELECT column_name FROM table
+                    </td>
+                    <td>
+                        returns data from column_name in table
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        SELECT DISTINCT column_name FROM table
+                    </td>
+                    <td>
+                        returns distinct data from column name (i.e., no same data is listed more than once in the returned data)
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name2=value
+                    </td>
+                    <td>
+                        returns from column_name data only values that
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name IN (value_1, value_2)
+                    </td>
+                    <td>
+                        returns from column_name data for only these values
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name LIKE "pattern%"
+                    </td>
+                    <td>
+                        returns from column_name data for values that only begin with this pattern
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name LIKE "%pattern"
+                    </td>
+                    <td>
+                        returns from column_name data for values that only end with this pattern
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name LIKE "%pattern%"
+                    </td>
+                    <td>
+                        returns from column_name data for values that have this pattern anywhere in the string
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE column_name LIKE [a..f]
+                    </td>
+                    <td>
+                        returns from column_name data for values that only have this range of characters in their string
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT column_name FROM table WHERE statement AND statement
+                    </td>
+                    <td>
+                        returns from column_name data for values that satisfy both of these statements
+                    </td>
+                </tr>
+            </table>
+        </body>
+        
+        
+        
+    </html>
+    
+    
+    
+    
